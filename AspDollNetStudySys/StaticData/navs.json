@@ -1,0 +1,28 @@
+{
+	"contentManagement": [
+    {
+      "title": "Ajax",
+      "icon": "&#xe60a;",
+      "href": "../Component/AJAX.aspx",
+      "spread": false
+    }
+	],
+	"memberCenter": [
+    {
+      "title": "用户中心页正在制作中...",
+      "icon": "&#xe613;",
+      "href": "../Component/Empty.aspx",
+      "spread": false
+    }
+	],
+	"systemeSttings": [
+    {
+      "title": "系统设置页正在制作中...",
+      "icon": "&#xe631;",
+      "href": "../Component/Empty.aspx",
+      "spread": false
+    }
+	]
+}
+
+

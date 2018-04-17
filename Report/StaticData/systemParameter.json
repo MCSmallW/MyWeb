@@ -1,0 +1,14 @@
+{
+	"cmsName": "Asp.net学习系统",
+	"version": "beta",
+	"author": "IT",
+	"homePage": "index.aspx",
+	"server": "IIS",
+	"dataBase": "SQL 2008",
+	"maxUpload": "1M",
+	"userRights": "超级管理员",
+	"description": "查看报表",
+	"powerby": "建造于 @2018 IT",
+	"record": "xx",
+	"keywords": "1126123"
+}
