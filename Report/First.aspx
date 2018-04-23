@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link rel="stylesheet" href="Lib/layui/css/layui.css">
+    <link rel="stylesheet" href="Lib/layui/css/layui.css"/>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -58,13 +58,14 @@
   </div>
 </div>
 <script src="Lib/layui/layui.js"></script>
-<script src="Scripts/Login.js"></script>
-<script>
+    <script src="Scripts/Admin.js"></script>
+<%--<script src="Scripts/Login.js"></script>--%>
+<%--<script>
 //JavaScript代码区域
 layui.use('element', function(){
   var element = layui.element;
   
 });
-</script>
+</script>--%>
 </body>
 </html>

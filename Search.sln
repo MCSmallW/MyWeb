@@ -29,6 +29,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SearchBP", "..\SearchBP\", 
 		SlnRelativePath = "..\SearchBP\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Check\Service.csproj", "{F0461254-F764-4037-B106-449C13E3D68C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{D17D625D-F0CB-45A7-866E-0B71BF1EDA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D17D625D-F0CB-45A7-866E-0B71BF1EDA5E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{D17D625D-F0CB-45A7-866E-0B71BF1EDA5E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F0461254-F764-4037-B106-449C13E3D68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0461254-F764-4037-B106-449C13E3D68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0461254-F764-4037-B106-449C13E3D68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0461254-F764-4037-B106-449C13E3D68C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

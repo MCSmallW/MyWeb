@@ -10,24 +10,85 @@ namespace Helper
     {
         //Data Source=HP-PC;Initial Catalog=Test;Persist Security Info=True;User ID=sa;Password=123
         public static string connectionString = @"Data Source=HP-PC;Initial Catalog=Test;Persist Security Info=True;User ID=sa;Password=123";
-        string commandText="";
-        bool isRight = false;
+        SqlConnection conn;
 
-        public bool SQLToDT(string name)
+        //连接数据库
+        private void OpenConnection()
         {
-            DataTable dt = new DataTable();
-            commandText = "select fldPassWord from dbo.UserInfo where fldUserName='Test' and fldPassWord='123'";
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                SqlCommand cmd = new SqlCommand(commandText, conn);
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.Fill(dt);
-                if (dt.Rows.Count == 1)
-                {
-                    isRight = true;
-                }
+                conn = new SqlConnection(connectionString);
+                conn.Open();
             }
-            return isRight;
+            catch (Exception ex)
+            {
+                throw new Exception("数据库连接失败：" + ex.Message);
+            }
         }
+        //关闭数据库连接
+        private void CloseConnection()
+        {
+            if(conn.State==ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+
+        //执行数据库语句
+        private void OperateSql(string sql)
+        {
+            OpenConnection();
+            try
+            {
+                SqlCommand sqlCom = new SqlCommand(sql, conn);
+                sqlCom.ExecuteNonQuery();
+                sqlCom.Dispose();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("执行SQL语句失败：" + ex.Message);
+            }
+            CloseConnection();
+        }
+
+        //生成DataTable
+        public DataTable GetDataTable(string sql)
+        {
+            OpenConnection();
+            DataTable dt;
+            SqlDataAdapter dataAdapter;
+            try
+            {
+                dataAdapter = new SqlDataAdapter(sql, conn);
+                dt = new DataTable();
+                dataAdapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("返回dt失败：" + ex.Message);
+            }
+            CloseConnection();
+            return dt;
+        }
+        //判断是否管理员
+        public DataTable IfAdmin(string sql,string Admin)
+        {
+            OpenConnection();
+            DataTable dt;
+            SqlDataAdapter dataAdapter;
+            try
+            {
+                dataAdapter = new SqlDataAdapter(sql, conn);
+                dt = new DataTable();
+                dataAdapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("返回dt失败：" + ex.Message);
+            }
+            CloseConnection();
+            return dt;
+        }
+        
     }
 }

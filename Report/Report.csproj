@@ -170,6 +170,7 @@
     <Content Include="Lib\layui\lay\modules\tree.js" />
     <Content Include="Lib\layui\lay\modules\upload.js" />
     <Content Include="Lib\layui\lay\modules\util.js" />
+    <Content Include="Scripts\Admin.js" />
     <Content Include="Scripts\Group.js" />
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\main.js" />
