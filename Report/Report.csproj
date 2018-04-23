@@ -238,9 +238,9 @@
     <Content Include="StaticData\systemParameter.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HelpInfo\HelpInfo.csproj">
-      <Project>{f2ab7822-766a-4779-a248-20a0388fe58c}</Project>
-      <Name>HelpInfo</Name>
+    <ProjectReference Include="..\Check\Service.csproj">
+      <Project>{f0461254-f764-4037-b106-449c13e3d68c}</Project>
+      <Name>Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
