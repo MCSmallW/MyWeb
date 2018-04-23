@@ -7,7 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
     <title>报表查看</title>
     <link rel="stylesheet" href="Lib/layui/css/layui.css" media="all" />
-    <script type="text/javascript" src="Scripts/Login.js"></script>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -37,7 +36,8 @@
           <dd><a href="">安全设置</a></dd>
         </dl>
       </li>--%>
-      <li class="layui-nav-item"><a href="" class="showNotice">输入口令</a></li>
+        <li><button class="layui-btn layui-btn-fluid" id="Admin">登陆</button></li>
+      <%--<li class="layui-nav-item"><a href="javascript:;" id="Admin">输入口令</a></li>--%>
     </ul>
   </div>
   
@@ -73,13 +73,14 @@
     <p><span>建造于2018.4.16 IT</span></p>
   </div>
 </div>
-<script type="text/javascript" src="Lib/layui/layui.js"></script>
-<script>
-    //JavaScript代码区域
-    layui.use('element', function () {
-        var element = layui.element;
-
-    });
+    <script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
 </script>
+<script type="text/javascript" src="Lib/layui/layui.js"></script>
+<script type="text/javascript" src="Scripts/Login.js"></script>     
 </body>
 </html>
