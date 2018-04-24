@@ -1,8 +1,8 @@
 {
-	"cmsName": "Asp.net学习系统",
+	"cmsName": "Asp.net报表系统",
 	"version": "beta",
 	"author": "IT",
-	"homePage": "index.aspx",
+	"homePage": "First.aspx",
 	"server": "IIS",
 	"dataBase": "SQL 2008",
 	"maxUpload": "1M",

@@ -35,7 +35,7 @@ namespace Helper
         }
 
         //执行数据库语句
-        private void OperateSql(string sql)
+        public void OperateSql(string sql)
         {
             OpenConnection();
             try

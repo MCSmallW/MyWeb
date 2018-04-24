@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Check;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -27,7 +28,11 @@ namespace Report.Component
         }
         private void GetBug()
         {
-
+            string JobNum = Request["JobNum"];
+            string txtBug = Request["GetBug"];
+            //执行 插入SQL 
+            AddSQL addSQL = new AddSQL();
+            addSQL.AddBug(JobNum,txtBug);
         }
     }
 }
