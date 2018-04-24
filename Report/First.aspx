@@ -39,10 +39,9 @@
             <dd><a href="Component/Group1.aspx" target="index">部门一</a></dd>
             <dd><a href="javascript:;">部门二</a></dd>
             <dd><a href="javascript:;">部门三</a></dd>
-            <dd><a href="">超链接</a></dd>
           </dl>
         </li>
-        <li class="layui-nav-item"><a href="">发布商品</a></li>
+        <li class="layui-nav-item"><a href="">反馈</a></li>
       </ul>
     </div>
   </div>
@@ -60,12 +59,12 @@
 <script src="Lib/layui/layui.js"></script>
     <script src="Scripts/Admin.js"></script>
 <%--<script src="Scripts/Login.js"></script>--%>
-<%--<script>
+<script>
 //JavaScript代码区域
 layui.use('element', function(){
   var element = layui.element;
   
 });
-</script>--%>
+</script>
 </body>
 </html>
