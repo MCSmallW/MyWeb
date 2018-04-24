@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="Component\Group1.aspx" />
     <Content Include="Component\Main.aspx" />
+    <Content Include="Component\SendBug.aspx" />
     <Content Include="First.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Lib\layui\css\layui.css" />
@@ -171,6 +172,7 @@
     <Content Include="Lib\layui\lay\modules\upload.js" />
     <Content Include="Lib\layui\lay\modules\util.js" />
     <Content Include="Scripts\Admin.js" />
+    <Content Include="Scripts\Bug.js" />
     <Content Include="Scripts\Group.js" />
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\main.js" />
@@ -203,6 +205,13 @@
     </Compile>
     <Compile Include="Component\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Component\SendBug.aspx.cs">
+      <DependentUpon>SendBug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Component\SendBug.aspx.designer.cs">
+      <DependentUpon>SendBug.aspx</DependentUpon>
     </Compile>
     <Compile Include="First.aspx.cs">
       <DependentUpon>First.aspx</DependentUpon>

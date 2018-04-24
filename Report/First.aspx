@@ -41,7 +41,7 @@
             <dd><a href="javascript:;">部门三</a></dd>
           </dl>
         </li>
-        <li class="layui-nav-item"><a href="">反馈</a></li>
+        <li class="layui-nav-item"><a href="Component/SendBug.aspx" target="index">反馈</a></li>
       </ul>
     </div>
   </div>
@@ -57,10 +57,10 @@
   </div>
 </div>
 <script src="Lib/layui/layui.js"></script>
-    <script src="Scripts/Admin.js"></script>
-<%--<script src="Scripts/Login.js"></script>--%>
+<script src="Scripts/Admin.js"></script>
 <script>
 //JavaScript代码区域
+    //菜单栏特效
 layui.use('element', function(){
   var element = layui.element;
   

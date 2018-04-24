@@ -89,6 +89,25 @@ namespace Helper
             CloseConnection();
             return dt;
         }
+        //获取报表列表json数据
+        public DataTable GetReportList(string sql)
+        {
+            OpenConnection();
+            DataTable dt;
+            SqlDataAdapter dataAdapter;
+            try
+            {
+                dataAdapter = new SqlDataAdapter(sql, conn);
+                dt = new DataTable();
+                dataAdapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("返回列表出错：" + ex.Message);
+            }
+            CloseConnection();
+            return dt;
+        }
         
     }
 }
