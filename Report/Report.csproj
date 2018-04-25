@@ -174,6 +174,8 @@
     <Content Include="Scripts\Admin.js" />
     <Content Include="Scripts\Bug.js" />
     <Content Include="Scripts\Group.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Styles\Site.css" />
