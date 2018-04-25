@@ -10,9 +10,28 @@ namespace Check
     {
         public void AddBug(string JobNum,string Bug)
         {
-            string sql = "";
-            SQLHelper helper = new SQLHelper();
-            helper.OperateSql(sql);
+            string ip = HelpInfo.GetIP.GetLocalIP();
+            if (JobNum!=null && Bug!=null)
+            {
+                string sql = "";
+                SQLHelper helper = new SQLHelper();
+                helper.OperateSql(sql);
+            }
+            else if(JobNum==null)
+            {
+                //页面显示弹窗 请输入工号
+
+            }
+            else if(Bug==null)
+            {
+                //弹窗显示 你的反馈内容为空
+
+            }
+            else
+            {
+                //弹窗显示错误
+
+            }
         }
     }
 }
